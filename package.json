@@ -4,10 +4,22 @@
   "description": "A CLI todo applicationfor creating tasks and writing to a mongodb database",
   "exports": "./src/main.js",
   "type": "module",
+  "bin": {
+    "todo": "./src/main.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "inquirer": "^9.2.12",
+    "mongoose": "^8.0.1",
+    "nanoid": "^5.0.3",
+    "ora": "^7.0.1"
+  }
 }
